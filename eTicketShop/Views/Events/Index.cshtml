@@ -1,0 +1,199 @@
+﻿@model IEnumerable<eTicketShop.Models.Event>
+
+
+
+
+@{
+    ViewData["Title"] = "Events";
+}
+
+<h1>Events</h1>
+
+  @if (User.IsInRole("Manager"))
+   {
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+   }
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+      
+        <div class="card text-white bg-primary mb-3 m-3" style="max-width: 18rem;">
+            <div class="card-header"><h4 class="card-title text-center">@item.Name</h4></div>
+            <div class="card-body">
+                @*<h4 class="card-title">@item.Name</h4>*@
+                <p class="card-text">
+                    @{
+                        if (item.ImageUrl != null)
+                        {
+                            //var base64 = Convert.ToBase64String(item.Image);
+                            //var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+                            //<img src='@imgSrc' class="img-fluid align-middle"   />
+
+                            <img src="@item.ImageUrl" class="img-fluid align-middle" />
+                        }
+                        else
+                        {
+                            <img src='' class="img-fluid" />
+                        }
+                    }
+                    @*<img src="/media/events/@item.ImageUrl" class="img-fluid" alt="" />*@
+
+
+                    @*@Html.Raw(item.Description)*@
+
+    
+                                      
+                        <div>
+                            @Html.Raw(item.StartDate.ToString("dddd, dd MMMM yyyy"))
+                        </div>
+                        <div>
+                            @Html.Raw(item.StartDate.ToString("h:mm tt"))
+                        </div>
+                        <p class="py-2">
+                                @item.Price.ToString("C2")
+                        </p>
+
+                    @if (User.IsInRole("User"))
+                    {
+                        <p>
+                            <a class="btn btn-secondary" asp-controller="CartItems" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id">Add to cart</a>
+                        </p>
+
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    }
+
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit | </a> 
+                        <a asp-action="Details" asp-route-id="@item.Id">Details | </a> 
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
+             
+            </p>
+            </div>
+        </div>
+
+
+
+
+    @*    <div class="col-4">
+
+            @{
+                if(item.Image!=null){
+                var base64 = Convert.ToBase64String(item.Image);
+                var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+                    <img src='@imgSrc' class="img-fluid" />
+                }
+                else
+                {
+                    <img src='' class="img-fluid" />
+                }
+                }
+            @*<img src="/media/events/@item.ImageUrl" class="img-fluid" alt="" />*@
+         @*   <h4>@item.Name</h4>
+            <div>
+                @Html.Raw(item.Description)
+            </div>
+            <p>
+                @item.Price.ToString("C2")
+            </p>
+            <p>
+                <a class="btn btn-primary" asp-controller="CartItems" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id">Add to cart</a>
+            </p>
+
+            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+
+
+        </div>*@
+    }
+
+
+    @if (ViewBag.TotalPages > 1)
+    {
+        <div class="d-flex w-100 justify-content-center">
+            <pagination page-count="@ViewBag.TotalPages"
+                    page-target="/events/@ViewBag.CategorySlug"
+                    page-number="@ViewBag.PageNumber"
+                    page-range="@ViewBag.PageRange">
+            </pagination>
+        </div>
+    }
+
+
+</div>
+
+
+@*
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@

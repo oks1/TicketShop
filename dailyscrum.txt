@@ -1,0 +1,284 @@
+DAILY SCRUM - EVERY DAY AT 9AM (as soon as  you arrive)
+==========================================================
+
+In your shared Git repository create file "dailyscrum.txt".
+Both members of the team will write to this one file every morning at 9am.
+
+Each member writes down answers to 3 questions in the following format:
+
+<< current date goes here >>
+1. What I have done / not done since last Scrum?
+2. What I plan to do from this scrum to next? (next 24 hours)
+3. Where do I need assistance? What do I need to figure out?
+
+
+2022/11/02 Liutsiia
+===================
+1. Done / not done since last scrum:
+    Find necessary tutorials
+    Decided about project structure
+    git repository
+2. To do until next Scrum:
+    Worked on the tables in the database and their relationships
+    Work on create account
+3. Need assistance / figure things out
+    join tables
+
+2022/11/02 Oxana
+===================
+1. Done / not done since last scrum:
+	project proposal
+2. To do until next Scrum:
+	create SQL DB on Azure
+     create DB schema    
+3. Need assistance / figure things out
+	MVC or Razor
+	Code-first or DB-first
+
+
+2022/11/02 Myrzagul
+===================
+1. Done / not done since last scrum:
+   Researched about MVC projects 
+   Created a git repository, trello board and an empty MVC project
+   Looked for tutorials on MVC projects  
+2. To do until next Scrum:
+   Learn about scaffolding and implement it in the project
+   Assist in setting up the database 
+3. Need assistance / figure things out
+   connecting azure sql db with the project
+
+2022/11/03 Liutsiia
+===================
+1. Done / not done since last scrum:
+    Worked on the tables in the database and their relationships
+    Work on create
+    Start working /login/logout
+    
+2. To do until next Scrum:
+    List of users
+    Edit user
+    
+3. Need assistance / figure things out
+   roles
+
+2022/11/03 Oxana
+===================
+1. Done / not done since last scrum:
+    create SQL DB on Azure
+     create DB schema
+2. To do until next Scrum:
+    create model
+	learn about Scaffolding
+3. Need assistance / figure things out
+
+
+2022/11/03 Myrzagul
+===================
+1. Done / not done since last scrum:
+   Assisted in connecting the db to the project
+   Used scaffolding for creating models based on db
+   Tried/tested scaffolding for creating crud for users model   
+2. To do until next Scrum:
+   Add crud for other models where necessary 
+3. Need assistance / figure things out
+   routing/views	
+
+2022/11/04 Liutsiia
+===================
+1. Done / not done since last scrum:
+    List of users
+    Edit user
+    learn about roles
+2. To do until next Scrum:
+    Learn about Creating a custom roles
+    start working on roles
+3. Need assistance / figure things out
+   need assistance with roles
+
+2022/11/04 Oxana
+===================
+1. Done / not done since last scrum:
+    created model
+2. To do until next Scrum:
+    adding migration 
+3. Need assistance / figure things out
+
+
+
+2022/11/04 Myrzagul
+===================
+1. Done / not done since last scrum:
+   Tried to implement Identity for user login/registration
+   Learnt about database first approach and code first approach
+2. To do until next Scrum:
+   Trying to add a user with Identity
+3. Need assistance / figure things out
+   to choose between databse or code first approach		
+
+
+2022/11/05 Liutsiia
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+   
+
+2022/11/05 Oxana
+===================
+1. Done / not done since last scrum:
+    adding first migration 
+2. To do until next Scrum:
+    CRUD categories/events
+3. Need assistance / figure things out
+
+
+2022/11/05 Myrzagul
+===================
+1. Done / not done since last scrum:
+   Researched about azure blobs
+researched about azure storage account 
+2. To do until next Scrum:
+    find a good tutorial to upload an image to azure blob storage
+3. Need assistance / figure things out
+understanding how to link frontend and backend for images
+
+
+2022/11/06 Liutsiia
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+   
+
+2022/11/06 Oxana
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/06 Myrzagul
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/07 Liutsiia
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+   
+
+2022/11/07 Oxana
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/07 Myrzagul
+===================
+1. Done / not done since last scrum:
+   Tried several tutorials but no luck
+2. To do until next Scrum:
+   Continue looking for a good tutorial and trying to upload an image
+3. Need assistance / figure things out
+   uploading an image to azure blob storage
+
+
+2022/11/08 Liutsiia
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+   
+
+2022/11/08 Oxana
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/08 Myrzagul
+===================
+1. Done / not done since last scrum:
+   Tried several tutorials provided by Gregory
+   Uploaded images to the databse by converting them to bytes 
+2. To do until next Scrum:
+   Try uploading images to blob 
+3. Need assistance / figure things out
+   Implement stripe for payment
+
+2022/11/09 Liutsiia
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+   
+
+2022/11/09 Oxana
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/09 Myrzagul
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/10 Liutsiia
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+   
+
+2022/11/10 Oxana
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+
+
+2022/11/10 Myrzagul
+===================
+1. Done / not done since last scrum:
+    
+2. To do until next Scrum:
+    
+3. Need assistance / figure things out
+

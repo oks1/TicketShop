@@ -1,0 +1,40 @@
+﻿@model IEnumerable<eTicketShop.Models.Order>
+
+@{
+    ViewData["Title"] = "Users Order";
+}
+
+<h1>My Orders</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PaymentCode)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.PaidDateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.PaymentCode)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PaidDateTime)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
